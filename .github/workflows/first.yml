@@ -19,3 +19,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Step two
         run: "Get-ChildItem Env: | Sort-Object Name"
+  job3:
+    name: Third Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step three
+        run: env | sort
